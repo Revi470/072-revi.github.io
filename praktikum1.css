@@ -1,0 +1,135 @@
+
+*(
+    box-sizing: border-box;
+)
+.body{
+    margin: 0;
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.beranda{
+    background-image: url('gambar3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.header{
+    height: 100px;
+    padding: 120px;
+    text-align: center;
+    color: white;
+}
+.navbar{
+    text-align: center;
+    display: flex; 
+}
+
+.navbar a{
+    background-color: black;
+    color: rgb(130, 191, 209);
+    padding: 15px 15px;
+    text-decoration:none; 
+    text-align: center;
+}
+.navbar a:hover{
+    padding: 15px 15px;
+    background-color: rgb(248, 251, 255);
+    color: rgb(207, 76, 185);
+}
+
+.a{
+    height: 250px;
+    width: 200px;
+    font-size:30px; 
+    color: white;
+    border: outset black;
+    margin: auto;
+}
+.b{
+    margin-top: 10px;
+    border: outset black;
+    flex: 100%;
+    font-size:30px;
+    color: white; 
+    padding:20px 0px;
+    text-align: center;
+    }
+
+.sidebar{
+    flex: 50%;
+    font-size:20px; 
+    color:white;
+    margin: 100px 0px; 
+    text-align: left;
+    border: outset black;
+}
+.main{
+    flex: 50%;
+    font-size:20px; 
+    color:white;
+    margin: 100px 0px;
+    border: outset black;
+    text-align: left;
+}
+.c{
+    background-attachment: fixed;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    background-image: url('gambar.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 25px 25px 250px;
+    border:15px outset black;
+}
+.row{
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('gambar.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    padding-top: 10px;
+}
+.footer{ 
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    
+}
+@media screen and (max-width: 800px){
+    .navbar{
+        flex-direction: column;
+    }
+    .row{
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    .c{
+        font-size: 30px;
+        font-style: italic;
+        text-align: center;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    
+.b,.sidebar,.main{
+    font-size: 20px;
+    margin: 0%;
+    border: outset black;
+    flex-direction: column;
+    color: white; 
+    padding:20px 0px;
+    margin-top : 10px;
+}
+.a{
+    font-size:30px; 
+    color: white;
+    margin:auto;
+}
+}
